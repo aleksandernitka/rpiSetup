@@ -46,3 +46,7 @@ sudo apt-get update
 # Upgrade apps
 sudo apt-get upgrade -y
 
+# UPDATE SETTINGS
+
+# mouse control with keypads. Activate with CTRL + SHIFT + NUMLOCK
+setxkbmap -option keypad:pointerkeys 
