@@ -1,6 +1,8 @@
 #!/bin/bash
 
-# techworked modified
+# kudos:
+# techworked https://github.com/techworked/raspberrypi-remove-apps
+# raspberrycoulis https://github.com/raspberrycoulis/remove-bloat
 
 # rm apps
 sudo apt-get --yes remove --purge minecraft-pi 
@@ -18,6 +20,12 @@ sudo apt-get --yes remove --purge nodered
 sudo apt-get --yes remove --purge libreoffice*
 sudo apt-get --yes remove --purge claws-mail
 sudo apt-get --yes remove --purge python3-thonny
+sudo apt-get --yes remove --purge dillo
+sudo apt-get --yes remove --purge penguinspuzzle
+sudo apt-get --yes remove --purge oracle-java8-jdk
+sudo apt-get --yes remove --purge openjdk-7-jre 
+sudo apt-get --yes remove --purge oracle-java7-jdk 
+sudo apt-get --yes remove --purge openjdk-8-jre
 
 
 # Autoremove
@@ -31,11 +39,7 @@ sudo apt-get update
 
 # Install apps
 sudo apt-get install vnc -y
-
-cd ~/Downloads/
-wget "https://downloads.vivaldi.com/stable/vivaldi-stable_1.13.1008.34-1_armhf.deb"
-sudo dpkg -i /path/to/deb/file
-sudo apt-get install -f
+sudo apt-get install openvpn -y
 
 # Update
 sudo apt-get update
